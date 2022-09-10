@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature  converter</title>
+</head>
+<body>
+    
+    <form id="tempconv" onsubmit="calculateTemp(); return false">
+        <label for=" temp">Enter  Temperature  to convert</label> <br/>
+        <br/> <input type="number" name="temp" id="temp">
+
+        <select name="temp_diff" id="temp_diff">
+            <option value="celsius">  °celsius</option>
+            <option value="fahrenheit">  °fahrenheit</option>
+
+        </select> <br/><br/>
+
+        <input type="submit" name ="temp"> <br/>
+        <span id="resultContainer"></span>
+    </form>
+    <footer>
+        Designed by : <a href="linkedin.com/in/amit-kumar-singh-34228b203" target="_blank">
+            Amit kumar singh 
+        </a>
+    </footer>
+
+
+ <script src="./script.js"></script>
+</body>
+</html>
